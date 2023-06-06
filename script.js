@@ -64,6 +64,7 @@ function getRandomMeal(){
   resultHeading.innerHTML = "";
   single_mealEl.innerHTML = "";
   mealsEl.innerHTML = "";
+  search.value = "";
 
   fetch(`https://www.themealdb.com/api/json/v1/1/random.php`)
   .then(res => res.json())
